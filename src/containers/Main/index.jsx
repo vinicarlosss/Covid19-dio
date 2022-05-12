@@ -12,7 +12,7 @@ function Main(){
 
     useEffect(() => {
         getCovidData(country)
-    }, [getCovidData])
+    }, [getCovidData, country])
 
     return(
         <div>

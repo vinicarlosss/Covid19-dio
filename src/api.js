@@ -10,7 +10,9 @@ const headers = {
 
 function getCountry(country) {
     return axios.get(`${path}/${country}`, headers)
-    .then((response) => response.json())
+        .then((response) => response.data)
 }
 
-export default(getCountry)
+export default {
+    getCountry
+}
