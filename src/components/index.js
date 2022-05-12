@@ -4,6 +4,7 @@ import Typography from './Typography'
 import Skeleton from './Skeleton'
 import Select from './Select'
 import MenuItem from './MenuItem'
+import Grid from './Grid'
 
 export{
     Button,
@@ -12,5 +13,6 @@ export{
     Typography,
     Skeleton,
     Select,
-    MenuItem
+    MenuItem,
+    Grid
 }
