@@ -28,7 +28,7 @@ function Panel({ updateAt, onChange, data, country, getCovidData}){
         navigator.share({
             title: `Dados do covid - ${country}`,
             text : textCovid19,
-            url: 'https://covid19dio.netlify.app/'
+            url: 'https://covide19statsintheworld.herokuapp.com/'
         })
     }
 
