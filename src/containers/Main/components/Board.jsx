@@ -4,7 +4,7 @@ import { Grid,Skeleton } from '../../../components'
 import  Card  from './Card'
 
 function Board({ data }) {
-    const { cases, todayDeaths, recovered, deaths, todayCases} = data
+    const { cases, todayDeaths, recovered, deaths, todayCases, casesPerOneMillion, deathsPerOneMillion, totalTests} = data
 
     const getValue = (value) => value ? value : <Skeleton variant = "text" width={182} height={60} />
 
@@ -24,6 +24,15 @@ function Board({ data }) {
             </Grid>
             <Grid item xs={12} md={3}>
                 <Card value ={getValue(recovered)} label = "Total de recuperados" color ="#67c887"/>
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value ={getValue(casesPerOneMillion)} label = "Casos p/ milhão de habitantes" color ="violet"/>
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value ={getValue(deathsPerOneMillion)} label = "Mortes p/ milhão de habitantes" color ="gray"/>
+            </Grid>
+            <Grid item xs={12} md={3}>
+                <Card value ={getValue(totalTests)} label = "Número total de testes" color ="maroon"/>
             </Grid>
         </Grid>
     )
