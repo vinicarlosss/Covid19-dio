@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {Typography, CardContent} from '../../components'
+import {Typography, CardContent} from '../../../components'
 
 export const LabelStyled = styled(Typography)`
     font-weight: 500;
@@ -12,7 +12,7 @@ export const ValueStyled = styled(Typography)`
 `;
 
 export const CardContentStyled = styled(CardContent)`
-    border-left: 8px solid ${{ color }} => color || '#5d78f' 
+    border-left: 8px solid ${({color})  => color || '#5d78f' }
 `;
 
 export const CardPanelContentStyled = styled(CardContent)`

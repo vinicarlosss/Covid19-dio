@@ -3,6 +3,7 @@ import Api from '../../api.js'
 import { ContainerStyled } from './style'
 import Board from './components/Board'
 
+
 function Main(){
     const[data, setData] = useState({})
     const [country, setCountry] = useState('brazil')
